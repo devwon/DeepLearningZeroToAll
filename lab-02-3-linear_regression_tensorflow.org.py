@@ -1,14 +1,17 @@
 # From https://www.tensorflow.org/get_started/get_started
-import tensorflow as tf
+import tensorflow as tf # tensorflow import한다
 
 # Model parameters
+#W,b 각각의 변수를 정의/타입은 32bit float
 W = tf.Variable([.3], tf.float32)
 b = tf.Variable([-.3], tf.float32)
 
 # Model input and output
+#x,y 각각의 placeholder 정의
 x = tf.placeholder(tf.float32)
 y = tf.placeholder(tf.float32)
 
+#
 linear_model = x * W + b
 
 # cost/loss function
